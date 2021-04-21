@@ -122,7 +122,7 @@ public class KaratsubaMult {
     }
 
     private static void deleteZeros(LinkedList<Character> from) {
-        while (from.getFirst()=='0'){
+        while (from.getFirst()=='0' && from.size()>1){
             from.removeFirst();
         }
     }
