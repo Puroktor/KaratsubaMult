@@ -11,21 +11,21 @@ public class Number {
         isPositive = positive;
     }
 
-    public void setList(LinkedList<Character> list) {
+    public void setList(LinkedList<Byte> list) {
         this.list = list;
     }
 
-    public Number(boolean isPositive, LinkedList<Character> list) {
+    public Number(boolean isPositive, LinkedList<Byte> list) {
         this.isPositive = isPositive;
         this.list = list;
     }
 
-    public LinkedList<Character> getList() {
+    public LinkedList<Byte> getList() {
         return list;
     }
 
     private boolean isPositive;
-    private LinkedList<Character> list;
+    private LinkedList<Byte> list;
 
     @Override
     public String toString() {
@@ -34,8 +34,8 @@ public class Number {
         StringBuilder sb = new StringBuilder();
         if (!isPositive)
             sb.append('-');
-        for (char ch : list) {
-            sb.append(ch);
+        for (byte b : list) {
+            sb.append(b);
         }
         return sb.toString();
     }

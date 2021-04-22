@@ -23,12 +23,12 @@ public class Main {
 
     private static Number2ways getRandomNumber() {
         int n = RND.nextInt(200) + 200;
-        LinkedList<Character> list = new LinkedList<>();
+        LinkedList<Byte> list = new LinkedList<>();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            char ch = (char) (RND.nextInt(10) + '0');
-            sb.append(ch);
-            list.add(ch);
+            byte b = (byte) RND.nextInt(10);
+            sb.append(b);
+            list.add(b);
         }
         Number num = new Number(RND.nextBoolean(), list);
         BigInteger bigInteger = new BigInteger(sb.toString());
